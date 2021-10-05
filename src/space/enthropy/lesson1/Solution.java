@@ -1,4 +1,4 @@
-package space.enthropy;
+package space.enthropy.lesson1;
 
 import java.util.Scanner;
 

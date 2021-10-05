@@ -1,4 +1,4 @@
-package space.enthropy;
+package space.enthropy.lesson1;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -166,14 +166,14 @@ public class Main { // public - доступ к классу может быть
         // in.nextLine() -> Рассматривает считанные данные в качестве String (всю строку включая пробелы и прочее)
         // in.nextChar() ? -> не существует. in.next().charAt(0) -> считывает один символ
 
-       // int[] a = new int[]
+        // int[] a = new int[]
 
         // 2) Init
-        int[] xx = new int[] {2, in.nextInt(), in.nextInt()}; // подходит в основном для тестирования (когда заранее задаются какие-либо значения)
+        int[] xx = new int[]{2, in.nextInt(), in.nextInt()}; // подходит в основном для тестирования (когда заранее задаются какие-либо значения)
         System.out.println(xx.length); // 3
 
         // todo Важный момент
-        int[] array1 = new int[] {1, 2, 3};
+        int[] array1 = new int[]{1, 2, 3};
         int[] array2 = array1.clone(); // clone -> клонирует (то есть выделяет с точно такими же значениями другую ячейку памяти)
         for (int i = 0; i < array1.length; i++) {
             array2[i] = array1[i];
