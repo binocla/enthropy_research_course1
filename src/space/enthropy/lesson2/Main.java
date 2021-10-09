@@ -59,13 +59,15 @@ public class Main {
         // String input = in.next(); // Считывает 1 слово (до пробела или отступа)
         String inputLine = in.nextLine(); // Считывает всю строку (включая пробелы и блаблабла)
         int sum = 0;
-        String[] array = inputLine.split(" ");
-        char ch = '5';
-        System.out.println(ch - '0'); // '5' -> 5 (int). -'0'
-        for (int i = 0; i < array.length; i++) {
-            sum += Integer.parseInt(array[i]); // Integer.parseInt -> берет целое число из строки "123" -> 123. Если будет не число в строке ("213f3") -> будет Exception
-        }
+//        String[] array = inputLine.split(" ");
+//        char ch = '5';
+//        System.out.println(ch - '0'); // '5' -> 5 (int). -'0'
+//        for (int i = 0; i < array.length; i++) {
+//            sum += Integer.parseInt(array[i]); // Integer.parseInt -> берет целое число из строки "123" -> 123. Если будет не число в строке ("213f3") -> будет Exception
+//        }
         System.out.println(sum);
+        // indexOf | lastIndexOf (char) ->
+
 
     }
 }
