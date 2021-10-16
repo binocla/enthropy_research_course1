@@ -19,6 +19,7 @@ public class Main {
         System.out.println(p1); // p1.toString()
         Animal animal = new Animal();
         Person p2 = new Person();
+        System.out.println(p2);
 
 
     }

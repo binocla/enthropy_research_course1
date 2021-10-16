@@ -14,7 +14,9 @@ public class Person {
         this.age = age;
         this.email = email;
     }
-    public Person() {}
+    public Person() {
+
+    }
 
     public Person(String first_name, String last_name, int age) {
         this.first_name = first_name;
