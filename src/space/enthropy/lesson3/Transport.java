@@ -7,6 +7,10 @@ public class Transport {
     public int age = 10; // 0
     public static int result;
 
+    public static void main(String[] args) {
+
+    }
+
     // Раннее связывание -> JVM сразу компилирует static методы или поля.
     // Позднее связывание -> JVM компилирует конкретную строку кода во время выполнения. Как в питоне
     // Все, что ниже применимо только к полям или методам
@@ -24,6 +28,9 @@ public class Transport {
 
     public static void calc(int x, int y) {
         result = x + y;
+    }
+    public static void calc(String x, int y) {
+        result = y;
     }
 
     public static int calc(int x, int y, int z) { // этот метод и выше называется ПЕРЕГРУЗКОЙ (сигнатура одинакова, но количество параметров различно)

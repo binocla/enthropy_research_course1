@@ -14,6 +14,11 @@ public class Main {
         Transport transport = new Transport();
         System.out.println(Transport.color);
         System.out.println(transport.age);
+        Transport transport1 = new Transport();
+        Transport transport2 = new Transport();
+        System.out.println(transport1.age);
+        System.out.println(transport2.age);
+        System.out.println(Transport.color);
     }
 
     public static int calc(int x, int y) {
