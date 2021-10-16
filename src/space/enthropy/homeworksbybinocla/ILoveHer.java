@@ -32,12 +32,13 @@ public class ILoveHer {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
-        long code = 0;
-        if (!s.contains(" says that Binocla loves you!") || s.split(" ").length >= 7) {
+        int code = 0; // переменная для подсчета
+        if (!s.contains(" says that Binocla loves you!")
+                || s.split(" ").length != 6) { // s s q q w
             System.out.println("What a mess!");
         } else {
             for (int i = 0; i < s.length(); i++) {
-                code += (int) (s.charAt(i));
+                code += s.charAt(i);
             }
             System.out.println(code);
         }
