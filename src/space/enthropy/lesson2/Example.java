@@ -1,4 +1,4 @@
-package space.enthropy;
+package space.enthropy.lesson2;
 
 
 import java.util.Arrays;

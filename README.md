@@ -1,29 +1,25 @@
-# README #
+# Course 1 #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Enthropy
 
-### What is this repository for? ###
+![enthropy](https://sun9-64.userapi.com/impg/xHeJHljhPd5iD4Ej3LVeyczCpQtxf5qSAa3pww/nYTTxCigzhA.jpg?size=1900x1188&quality=96&sign=abc96631efa946ec703f83abeddb22e9&type=album)
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Темы занятий ##
 
-### How do I get set up? ###
+1) Переменные, циклы, условия
+2) Строки, методы строк
+3) Введение в ООП (static, поле, модификаторы)
+4) Продолжение ООП (методы, переопределение, перегрузка)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+## Навигация ##
 
-### Contribution guidelines ###
+| Название package | Описание |
+| ----------- | ----------- |
+| acmp | Задачи с [acmp.ru](https://acmp.ru) |
+| homeworksbybinocla | Домашние задания от [@binocla](https://vk.com/binocla) |
+| lesson **номер** | Номер урока (темы указаны выше) |
 
-* Writing tests
-* Code review
-* Other guidelines
+## Мои контакты ##
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+- **[VK](https://vk.com/binocla)**
+- **[Telegram](https://t.me/binocla)**
