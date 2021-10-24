@@ -11,6 +11,7 @@ public class Main {
         // 4) new Scanner(System.in) -> создание нового экземпляра класса (через конструктор)
         // Конструктор - специальный метод, название которого совпадает с названием класса и необходим для инициализации полей
         Person p = new Person("Sergey", "Shamov", 19, "binocla@vk.com");
+        // p Это экземпляр класса Person
         Person p1 = new Person("Sergey", "Shamov", 19);
         // Все классы в Java унаследованы от Object (!)
         System.out.println(p.email);
