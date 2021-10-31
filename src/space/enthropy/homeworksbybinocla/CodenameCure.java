@@ -57,7 +57,7 @@ public class CodenameCure {
             int cnt = 0;
             for (int i = 0; i < q.length(); i++) {
                 switch (q.charAt(i)) {
-                    case 'а', 'о', 'е', 'ё', 'у', 'я', 'ю', 'ы', 'и' -> cnt++;
+                    case 'а', 'о', 'е', 'ё', 'у', 'я', 'ю', 'ы', 'и', 'э' -> cnt++;
                 }
             }
             if (cnt >= 3) {

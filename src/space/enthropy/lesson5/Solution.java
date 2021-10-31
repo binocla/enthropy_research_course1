@@ -16,12 +16,33 @@ public class Solution {
         cat.voice();
         dog.voice();
         animal.voice();
+        System.out.println(cat.getFullName());
+
+        Animal an = new Cat("hoover", 20, "asd");
+        Animal an1 = new Dog("qweqwe", 10);
+        Animal an2 = new Cat();
+        System.out.println("Animal 1");
+        System.out.println(an.hashCode());
+        System.out.println(an); // toString() используется дочернего класса (Cat)
+        System.out.println(an.getName()); // Методы класса Cat недоступны, потому что обобщили. Левый тип данных > Правого типа данных
+        System.out.println(an.getAge()); // Причем правый тип данных обязательное extends или implements левого
+        System.out.println("Animal 2");
+        System.out.println(an1); // toString метод из Object
+
+        System.out.println(an1.getName());
+        System.out.println(an1.getAge());
+        System.out.println("Animal 3");
+        System.out.println(an2);
+        System.out.println(an2.getName());
+        System.out.println(an2.getAge());
+        // Произошло ограничение (обобщение) -> мы сказали, что обобщим класс Cat до методов и полей класса Animal
+        // Восходящее преобразование (то есть Cat расширили до Animal. Таким образом потеряли функционал Cat)
 
     }
 }
 
 class Animal {
-    private String name;
+    public String name;
     private int age;
 
     public Animal(String name, int age) {
@@ -39,6 +60,15 @@ class Animal {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+
+    @Override
+    public int hashCode() {
+        System.out.println("I am from Animal");
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + age;
+        return result;
     }
 
     public void voice() {
@@ -67,7 +97,17 @@ class Cat extends Animal {
 
     public Cat(String name, int age, String favouriteToy) {
         super(name, age); // super(парам1, парам2...) -> передает в конструктор родителя name, age
+//        super.setAge(100); // через super можно обращаться к методам
+//        super.name = "qwewqe"; // можно к полям
         this.favouriteToy = favouriteToy;
+    }
+
+    public Cat() {
+
+    }
+
+    public Cat(String name, int age) {
+        super(name, age);
     }
 
     // Object (toString1) -> Animal (toString2) -> Cat (toString3)
@@ -76,9 +116,20 @@ class Cat extends Animal {
         return "Имя: " + getName() + " возраст: " + getAge() + " любимая игрушка: " + favouriteToy;
     }
 
+
+    @Override
+    public int hashCode() {
+        System.out.println("I am from Cat");
+        return favouriteToy != null ? favouriteToy.hashCode() : 0;
+    }
+
     @Override
     public void voice() {
         System.out.println("I am Animal Cat");
+    }
+
+    public String getFullName() {
+        return super.getName() + " " + this.getFavouriteToy();
     }
 
     public String getFavouriteToy() {
@@ -92,11 +143,15 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-    private int amountOfLegs;
+    private int amountOfLegs; // по умолчанию 0 (то есть если не инициализировали через конструктор или сразу -> 0) 
 
     public Dog(String name, int age, int amountOfLegs) {
         super(name, age);
         this.amountOfLegs = amountOfLegs;
+    }
+
+    public Dog(String name, int age) {
+        super(name, age);
     }
 
     @Override
