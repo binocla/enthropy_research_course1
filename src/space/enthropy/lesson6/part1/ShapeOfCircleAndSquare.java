@@ -14,5 +14,4 @@ public abstract class ShapeOfCircleAndSquare {
     public double getSquare() {
         return square;
     }
-
 }
