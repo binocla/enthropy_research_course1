@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: demo API
+  version: 1.0-SNAPSHOT
+paths:
+  /auth:
+    get:
+      tags:
+        - Homework Resource
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+  /send:
+    post:
+      tags:
+        - Homework Resource
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                hashcode:
+                  type: string
+                query:
+                  type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/html:
+              schema:
+                type: string
