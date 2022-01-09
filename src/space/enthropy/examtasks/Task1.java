@@ -1,4 +1,4 @@
-package space.enthropy.examtasks1;
+package space.enthropy.examtasks;
 
 import java.util.Scanner;
 
