@@ -1,4 +1,4 @@
-package space.enthropy.lesson9.vkontakte;
+package space.enthropy.examtasks.vkontakte;
 
 public abstract class Page {
     private static int start = 1;

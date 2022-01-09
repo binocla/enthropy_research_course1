@@ -1,6 +1,4 @@
-package space.enthropy.lesson9.vkontakte;
-
-import org.w3c.dom.ls.LSOutput;
+package space.enthropy.examtasks.vkontakte;
 
 public class Group extends Page implements Role, Notification {
     private User owner;

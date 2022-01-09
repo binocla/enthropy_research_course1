@@ -1,4 +1,4 @@
-package space.enthropy.lesson9.vkontakte;
+package space.enthropy.examtasks.vkontakte;
 
 public interface Payment {
     void operation();
