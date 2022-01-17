@@ -4,6 +4,8 @@
 
 ![enthropy](https://sun9-64.userapi.com/impg/xHeJHljhPd5iD4Ej3LVeyczCpQtxf5qSAa3pww/nYTTxCigzhA.jpg?size=1900x1188&quality=96&sign=abc96631efa946ec703f83abeddb22e9&type=album)
 
+## 
+
 ## Темы занятий ##
 
 1) Переменные, циклы, условия
