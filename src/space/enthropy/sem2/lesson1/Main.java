@@ -12,7 +12,7 @@ public class Main {
         intList.add(1);
         System.out.println(intList);
 
-        TreeSet<String> set = new TreeSet<>();
+        TreeSet<String> set = new TreeSet<>(Comparator.reverseOrder());
         set.add("Russia");
         set.add("USA");
         set.add("Japan");
