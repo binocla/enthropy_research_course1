@@ -1,9 +1,12 @@
 package space.enthropy.sem2.lesson6;
 
 import java.io.*;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) {
+        Queue<Integer> queue = new PriorityQueue<>();
         // Работа с файлами
         InputStream inputStream;
 
