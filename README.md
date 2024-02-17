@@ -18,10 +18,9 @@
 | Название package | Описание |
 | ----------- | ----------- |
 | acmp | Задачи с [acmp.ru](https://acmp.ru) |
-| homeworksbybinocla | Домашние задания от [@binocla](https://vk.com/binocla) |
+| homeworksbybinocla | Домашние задания от [@binocladev](https://t.me/binocladev) |
 | lesson **номер** | Номер урока (темы указаны выше) |
 
 ## Мои контакты ##
 
-- **[VK](https://vk.com/binocla)**
-- **[Telegram](https://t.me/binocla)**
+- **[Telegram](https://t.me/binocladev)**
